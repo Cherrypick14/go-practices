@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"time"
 
 	"practices/functions"
@@ -37,7 +38,11 @@ func main() {
 
 	functions.Countdown()
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(1 * time.Second)
 
 	functions.Leapyear(2000)
+
+	time.Sleep(2 * time.Second)
+
+	fmt.Println(functions.Isogram("davido"))
 }
