@@ -8,18 +8,17 @@ import (
 )
 
 func Displaylastparam() {
-   args := os.Args[1:]
+	args := os.Args[1:]
 
-   if len(args) < 1 {
-	  fmt.Println("Usage : <input> <output>")
-	   return
-   }
+	if len(args) < 1 {
+		fmt.Println("Usage : <input> <output>")
+		return
+	}
 
-   lastparam := args[1]   
+	lastparam := args[len(args)-1]
 
-   for _, char := range lastparam {
-	 z01.PrintRune(char)
-   }
-   z01.PrintRune('\n')
-
+	for _, char := range lastparam {
+		z01.PrintRune(char)
+	}
+	z01.PrintRune('\n')
 }
