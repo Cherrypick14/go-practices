@@ -1,35 +1,43 @@
 package main
 
 import (
-	"practices/functions"
 	"time"
+
+	"practices/functions"
 )
 
 func main() {
-   functions.Displayfirstparam()
+	functions.Displayfirstparam()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Displaylastparam()
+	functions.Displaylastparam()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Hello()
+	functions.Hello()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Displayalpham()
+	functions.Displayalpham()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Displayalrevm()
+	functions.Displayalrevm()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.ParamCount()
+	functions.ParamCount()
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Printdigits()
+	functions.Printdigits()
 
+	time.Sleep(1 * time.Second)
+
+	functions.Countdown()
+
+	time.Sleep(2 * time.Second)
+
+	functions.Leapyear(2000)
 }
