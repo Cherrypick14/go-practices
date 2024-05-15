@@ -45,4 +45,9 @@ func main() {
 	time.Sleep(2 * time.Second)
 
 	fmt.Println(functions.Isogram("davido"))
+
+   time.Sleep(2 * time.Second)
+   
+   intSlice := []int{1, 2, 3, 4, 5}
+	fmt.Println(functions.Max(intSlice))
 }
