@@ -42,12 +42,16 @@ func main() {
 
 	functions.Leapyear(2000)
 
-	time.Sleep(2 * time.Second)
+	time.Sleep(1 * time.Second)
 
 	fmt.Println(functions.Isogram("davido"))
 
-   time.Sleep(2 * time.Second)
-   
+   time.Sleep(1 * time.Second)
+
    intSlice := []int{1, 2, 3, 4, 5}
 	fmt.Println(functions.Max(intSlice))
+
+   time.Sleep(2 *time.Second)
+
+   functions.Strnlen("foosball")
 }
