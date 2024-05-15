@@ -28,4 +28,8 @@ func main() {
 
    functions.ParamCount()
 
+   time.Sleep(2 *time.Second)
+
+   functions.Printdigits()
+
 }
