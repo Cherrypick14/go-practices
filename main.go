@@ -51,7 +51,12 @@ func main() {
    intSlice := []int{1, 2, 3, 4, 5}
 	fmt.Println(functions.Max(intSlice))
 
-   time.Sleep(2 *time.Second)
+   time.Sleep(1 *time.Second)
 
    functions.Strnlen("foosball")
+
+   time.Sleep(2 *time.Second)
+
+   functions.Wdmatch("programiz","promiz")
+
 }
