@@ -24,4 +24,8 @@ func main() {
 
    functions.Displayalrevm()
 
+   time.Sleep(2 *time.Second)
+
+   functions.ParamCount()
+
 }
