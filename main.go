@@ -20,5 +20,8 @@ func main() {
 
    functions.Displayalpham()
 
+   time.Sleep(2 *time.Second)
+
+   functions.Displayalrevm()
 
 }
