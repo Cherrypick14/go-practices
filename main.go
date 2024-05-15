@@ -3,7 +3,6 @@ package main
 import (
 	"practices/functions"
 	"time"
-
 )
 
 func main() {
@@ -16,6 +15,10 @@ func main() {
    time.Sleep(2 *time.Second)
 
    functions.Hello()
+
+   time.Sleep(2 *time.Second)
+
+   functions.Displayalpham()
 
 
 }
