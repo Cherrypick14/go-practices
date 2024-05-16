@@ -55,8 +55,12 @@ func main() {
 
    functions.Strnlen("foosball")
 
-   time.Sleep(2 *time.Second)
+   time.Sleep(1 *time.Second)
 
    functions.Wdmatch("programiz","promiz")
+
+   time.Sleep(2 *time.Second)
+
+   functions.Firstrune("eastrip")
 
 }
