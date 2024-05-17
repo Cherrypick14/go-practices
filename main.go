@@ -46,21 +46,28 @@ func main() {
 
 	fmt.Println(functions.Isogram("davido"))
 
-   time.Sleep(1 * time.Second)
+	time.Sleep(1 * time.Second)
 
-   intSlice := []int{1, 2, 3, 4, 5}
+	intSlice := []int{1, 2, 3, 4, 5}
 	fmt.Println(functions.Max(intSlice))
 
-   time.Sleep(1 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Strnlen("foosball")
+	functions.Strnlen("foosball")
 
-   time.Sleep(1 *time.Second)
+	time.Sleep(1 * time.Second)
 
-   functions.Wdmatch("programiz","promiz")
+	functions.Wdmatch("programizp", "pomiz")
 
-   time.Sleep(2 *time.Second)
+	time.Sleep(2 * time.Second)
 
-   functions.Firstrune("eastrip")
+	functions.Firstrune("eastrip")
 
+	time.Sleep(2 * time.Second)
+
+	functions.Lastrune("eastsid")
+
+	stringslice := []string{"go", "money", "table", "be", "an"}
+
+	fmt.Println(functions.Shorteststring(stringslice))
 }
