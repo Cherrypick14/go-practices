@@ -2,16 +2,20 @@ package functions
 
 import (
 	"os"
+	"strconv"
 
 	"github.com/01-edu/z01"
 )
 
 func ParamCount() {
 	args := os.Args[1:]
-	count := 0
-	for range args {
-		count++
+
+	length := len(args)
+	strlength := strconv.Itoa(length)
+
+	for _, char := range strlength {
+		z01.PrintRune(char)
 	}
-	z01.PrintRune(rune(count + '0'))
+
 	z01.PrintRune('\n')
 }
