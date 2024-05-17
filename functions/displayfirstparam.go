@@ -10,7 +10,7 @@ import (
 func Displayfirstparam() {
 	args := os.Args[1:]
 
-	if len(args) < 1 {
+	if len(args) < 2 {
 		fmt.Println("Usage: <input> ")
 		return
 	}

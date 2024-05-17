@@ -10,7 +10,7 @@ import (
 func Displaylastparam() {
 	args := os.Args[1:]
 
-	if len(args) < 1 {
+	if len(args) != 3 {
 		fmt.Println("Usage : <input> <output>")
 		return
 	}
