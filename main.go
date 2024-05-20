@@ -57,7 +57,8 @@ func main() {
 
 	time.Sleep(1 * time.Second)
 
-	functions.Wdmatch("programizp", "pomiz")
+	fmt.Println(functions.Wdmatch("faya", "fgvvfdxcacpolhyghbred"))
+	fmt.Println(functions.Wdmatch("123", "123"))
 
 	time.Sleep(2 * time.Second)
 
