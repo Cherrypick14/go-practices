@@ -1,21 +1,21 @@
 package functions
 
-import "fmt"
 
-func Wdmatch(first, second string){
-    mapChar := make(map[rune]bool)
-	var result string
-   
-	for _, char := range second{
-		mapChar[char] = true
-	}
 
-	for _, char := range first {
-		if mapChar[char] {
-		   result += string(char)
+func containsword(first, second string) bool {
+	i := 0
+	for j := 0; j< len(second) && i < len(first); j++ {
+		if second[j] == first[i] {
+			i++
 		}
 	}
+	return i== len(first)
+}
+func Wdmatch(first, second string) string{
 
- fmt.Println(result)
-
+	if containsword(first, second) {
+		 return first
+		
+	}
+ return ""
 }
