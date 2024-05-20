@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"time"
 
 	"practices/functions"
@@ -12,63 +12,65 @@ func main() {
 
 	time.Sleep(1 * time.Second)
 
-	functions.Displaylastparam()
+	// functions.Displaylastparam()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Hello()
+	// functions.Hello()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Displayalpham()
+	// functions.Displayalpham()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Displayalrevm()
+	// functions.Displayalrevm()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.ParamCount()
+	// functions.ParamCount()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Printdigits()
+	// functions.Printdigits()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Countdown()
+	// functions.Countdown()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Leapyear(2000)
+	// functions.Leapyear(2000)
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	fmt.Println(functions.Isogram("davido"))
+	// fmt.Println(functions.Isogram("davido"))
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	intSlice := []int{1, 2, 3, 4, 5}
-	fmt.Println(functions.Max(intSlice))
+	// intSlice := []int{1, 2, 3, 4, 5}
+	// fmt.Println(functions.Max(intSlice))
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	functions.Strnlen("foosball")
+	// functions.Strnlen("foosball")
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
-	fmt.Println(functions.Wdmatch("faya", "fgvvfdxcacpolhyghbred"))
-	fmt.Println(functions.Wdmatch("123", "123"))
+	// fmt.Println(functions.Wdmatch("faya", "fgvvfdxcacpolhyghbred"))
+	// fmt.Println(functions.Wdmatch("123", "123"))
 
-	time.Sleep(2 * time.Second)
+	// time.Sleep(2 * time.Second)
 
-	functions.Firstrune("eastrip")
+	// functions.Firstrune("eastrip")
 
-	time.Sleep(2 * time.Second)
+	// time.Sleep(2 * time.Second)
 
-	functions.Lastrune("eastsid")
+	// functions.Lastrune("eastsid")
 
-	stringslice := []string{"go", "money", "table", "be", "an"}
+	// stringslice := []string{"go", "money", "table", "be", "an"}
 
-	fmt.Println(functions.Shorteststring(stringslice))
+	// fmt.Println(functions.Shorteststring(stringslice))
+    // time.Sleep(2 * time.Second)
+	// fmt.Println(functions.Itoa(1234))
 }
