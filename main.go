@@ -2,15 +2,15 @@ package main
 
 import (
 	// "fmt"
-	"time"
+	// "time"
 
-	"practices/functions"
+	"practice/functions"
 )
 
 func main() {
-	functions.Displayfirstparam()
+	// functions.Displayfirstparam()
 
-	time.Sleep(1 * time.Second)
+	// time.Sleep(1 * time.Second)
 
 	// functions.Displaylastparam()
 
@@ -57,7 +57,7 @@ func main() {
 
 	// time.Sleep(1 * time.Second)
 
-	// fmt.Println(functions.Wdmatch("faya", "fgvvfdxcacpolhyghbred"))
+	functions.Wdmatch( "quarante deux", "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq ")
 	// fmt.Println(functions.Wdmatch("123", "123"))
 
 	// time.Sleep(2 * time.Second)
