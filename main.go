@@ -1,13 +1,14 @@
 package main
 
 import (
-	// "fmt"
+	"fmt"
 	// "time"
 
-	"practice/functions"
+	"practices/functions"
 )
 
 func main() {
+	fmt.Println(functions.Itoa(999))
 	// functions.Displayfirstparam()
 
 	// time.Sleep(1 * time.Second)
@@ -57,7 +58,7 @@ func main() {
 
 	// time.Sleep(1 * time.Second)
 
-	functions.Wdmatch( "quarante deux", "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq ")
+	// functions.Wdmatch( "quarante deux", "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq ")
 	// fmt.Println(functions.Wdmatch("123", "123"))
 
 	// time.Sleep(2 * time.Second)
