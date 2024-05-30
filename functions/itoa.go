@@ -1,9 +1,17 @@
 package functions
 
-import "fmt"
-
 func Itoa(n int) string {
-   num := fmt.Sprintf("%d", n)
 
-   return num
+	res := ""
+
+	if n == 0 {
+		return "0"
+	}
+
+	for n > 0 {
+		res = string(n%10+'0') + res
+		n /= 10
+	}
+
+	return res
 }
