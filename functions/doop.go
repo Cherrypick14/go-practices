@@ -7,7 +7,7 @@ import (
 
 const (
 	MaxInt = 9223372036854775807 // Maximum value for a 64-bit signed integer
-	// MinInt = -9223372036854775808 // Minimum value for a 64-bit signed integer
+	MinInt = -9223372036854775808 // Minimum value for a 64-bit signed integer
 )
 
 func atoi(s string) int {
@@ -68,7 +68,6 @@ func main() {
 			return
 		}
 		result = num1 / num2
-			return
 	case "%":
 		if num2 == 0 {
 			fmt.Println("No modulo by 0")
@@ -76,11 +75,11 @@ func main() {
 		}
 		result = num1 % num2
 	}
-		if result >= 9223372036854775805 || result < 9223372036854775805 {
-			return
-		}
+		if (num1 > 0 && num2 > 0 && result < num1) || (num1 < 0 && num2 < 0 && result > num1) {
+		return
+	}
 
 
-	fmt.Println("last", result)
+	fmt.Println(result)
 
 }
