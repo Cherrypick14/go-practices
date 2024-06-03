@@ -12,7 +12,7 @@ func Add(a, b int) int {
 	return a + b
 }
 
-func Mul(a, b int) int {
+func Mul2(a, b int) int {
 	return a * b
 }
 
