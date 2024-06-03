@@ -1,14 +1,25 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	// "time"
 
 	"practices/functions"
 )
 
 func main() {
-	fmt.Println(functions.Itoa(999))
+	table := []int{1,2,3}
+	acc := 93
+
+	functions.FoldInt(functions.Add,table,acc)
+
+	functions.FoldInt(functions.Mul,table,acc)
+
+	functions.FoldInt(functions.Sub,table,acc)
+
+	
+	// fmt.Println(functions.Itoa(999))
+	// fmt.Println(functions.Atoi("999"))
 	// functions.Displayfirstparam()
 
 	// time.Sleep(1 * time.Second)
