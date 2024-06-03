@@ -8,14 +8,19 @@ import (
 )
 
 func main() {
-	table := []int{1,2,3}
-	acc := 93
+	// table := []int{1,2,3}
+	as := []int{500,2}
+	// acc := 93
 
-	functions.FoldInt(functions.Add,table,acc)
+	functions.ReduceInt(as, functions.Mul)
+	functions.ReduceInt(as, functions.Sum)
+	functions.ReduceInt(as, functions.Div)
 
-	functions.FoldInt(functions.Mul,table,acc)
+	// functions.FoldInt(functions.Add,table,acc)
 
-	functions.FoldInt(functions.Sub,table,acc)
+	// functions.FoldInt(functions.Mul,table,acc)
+
+	// functions.FoldInt(functions.Sub,table,acc)
 
 	
 	// fmt.Println(functions.Itoa(999))
