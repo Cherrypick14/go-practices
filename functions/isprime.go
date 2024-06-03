@@ -9,3 +9,10 @@ func Isprime(n int) bool {
 	}
 	return true
 }
+
+func FindNextPrime(n int) int {
+	if !Isprime(n) {
+		n++
+	}
+	return n
+}
