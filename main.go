@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "fmt"
+	"fmt"
 	// "time"
 
 	"practices/functions"
@@ -9,13 +9,15 @@ import (
 
 func main() {
 	// table := []int{1,2,3}
-	as := []int{500,2}
+	// as := []int{500,2}
 	// acc := 93
 
-	functions.ReduceInt(as, functions.Mul)
-	functions.ReduceInt(as, functions.Sum)
-	functions.ReduceInt(as, functions.Div)
+	// functions.ReduceInt(as, functions.Mul)
+	// functions.ReduceInt(as, functions.Sum)
+	// functions.ReduceInt(as, functions.Div)
 
+	fmt.Println(functions.Isprime(5))
+	fmt.Println(functions.Isprime(4))
 	// functions.FoldInt(functions.Add,table,acc)
 
 	// functions.FoldInt(functions.Mul,table,acc)
