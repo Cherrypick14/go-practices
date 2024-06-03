@@ -19,8 +19,11 @@ func main() {
 	// fmt.Println(functions.Isprime(5))
 	// fmt.Println(functions.Isprime(4))
 
-	fmt.Println(functions.FindNextPrime(5))
-	fmt.Println(functions.FindNextPrime(4))
+	// fmt.Println(functions.FindNextPrime(5))
+	// fmt.Println(functions.FindNextPrime(4))
+
+	fmt.Println(functions.FindPrevPrime(5))
+	fmt.Println(functions.FindPrevPrime(4))
 
 	// functions.FoldInt(functions.Add,table,acc)
 
