@@ -16,8 +16,12 @@ func main() {
 	// functions.ReduceInt(as, functions.Sum)
 	// functions.ReduceInt(as, functions.Div)
 
-	fmt.Println(functions.Isprime(5))
-	fmt.Println(functions.Isprime(4))
+	// fmt.Println(functions.Isprime(5))
+	// fmt.Println(functions.Isprime(4))
+
+	fmt.Println(functions.FindNextPrime(5))
+	fmt.Println(functions.FindNextPrime(4))
+
 	// functions.FoldInt(functions.Add,table,acc)
 
 	// functions.FoldInt(functions.Mul,table,acc)
