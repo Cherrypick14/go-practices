@@ -76,9 +76,7 @@ func main() {
 		}
 		result = num1 % num2
 	}
-		if result >= 9223372036854775805 || result < 9223372036854775805 {
-			return
-		}
+		
 
 
 	fmt.Println("last", result)
