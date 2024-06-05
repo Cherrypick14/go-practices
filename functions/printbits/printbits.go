@@ -9,10 +9,9 @@ func main() {
 	if len(os.Args) != 2 {
 		return
 	}
-
 	args1 := os.Args[1]
 
-	num := attoi2(args1)
+	num := Attoi(args1)
 
 	if num < 0 {
 		fmt.Println("00000000")
@@ -20,7 +19,6 @@ func main() {
 	}
 
 	var bin string
-
 	for num > 0 {
 		if num%2 != 0 {
 			bin = "1" + bin
@@ -37,11 +35,11 @@ func main() {
 			zeros += "0"
 		}
 	}
-	zeros = zeros + bin
-	fmt.Println(zeros)
+	bin = zeros + bin
+	fmt.Println(bin)
 }
 
-func attoi2(s string) int {
+func Attoi(s string) int {
 	res := 0
 
 	for _, char := range s {
@@ -49,7 +47,7 @@ func attoi2(s string) int {
 			return -1
 		}
 		num := int(char - '0')
-		res = (res * 10) + num
+		res = res*10 + num
 	}
 	return res
 }
