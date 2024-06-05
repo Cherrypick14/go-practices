@@ -16,5 +16,5 @@ func activebits(nb int) int {
 }
 
 func main() {
-	fmt.Println(activebits(7))
+	fmt.Println(activebits(2))
 }
