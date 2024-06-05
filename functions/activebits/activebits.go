@@ -9,12 +9,12 @@ func activebits(nb int) int {
 		if nb%2 == 1 {
 			count++
 		}
-		res = string(nb%2+'0') + res
+		res = string(nb%2 + '0') + res
 		nb = nb / 2
 	}
 	return count
 }
 
 func main() {
-	fmt.Println(activebits(2))
+	fmt.Println(activebits(7))
 }
