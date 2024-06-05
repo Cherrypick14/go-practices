@@ -27,5 +27,5 @@ func itoa4(nb int) string {
 }
 
 func main() {
-	fmt.Println(tobinary(7))
+	fmt.Println(tobinary(6))
 }
