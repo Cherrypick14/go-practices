@@ -1,9 +1,17 @@
 package functions
 
 import (
-	"fmt"
 	"os"
 )
+
+func itoa(nb int) string {
+	res := ""
+	for nb > 0 {
+		res = string(nb%10) + res
+		nb /= 10
+	}
+	return res
+}
 
 const (
 	MaxInt = 9223372036854775807 // Maximum value for a 64-bit signed integer
@@ -35,50 +43,53 @@ func atoi(s string) int {
 	}
 
 	return int(res) * sign
-
 }
 
 func main() {
 	var result int
 
+	// handle no of args
 	if len(os.Args) != 4 {
-		fmt.Println("Usage: go run main.go <num1> <operator> <num2>")
 		return
 	}
 	args1 := os.Args[1]
 	operator := os.Args[2]
 	args3 := os.Args[3]
 
+	// handle invalid operators
+	if operator != "-" && operator != "+" && operator != "/" && operator != "*" && operator != "%" {
+		return
+	}
 	num1 := atoi(args1)
 	num2 := atoi(args3)
 
 	switch operator {
 	case "+":
 		result = num1 + num2
-		// fmt.Println(result)
+
 	case "-":
 		result = num1 - num2
-		// fmt.Println(result)
+
 	case "*":
 		result = num1 * num2
-		// fmt.Println(result)
+
 	case "/":
 		if num2 == 0 {
-			fmt.Println("No division by 0")
+			os.Stdout.WriteString("No division by 0")
 			return
 		}
 		result = num1 / num2
-			return
+
 	case "%":
 		if num2 == 0 {
-			fmt.Println("No modulo by 0")
+			os.Stdout.WriteString("No modulo by 0")
 			return
 		}
 		result = num1 % num2
 	}
-		
+	if num1 > 0 && num2 > 0 && result < num1 || num1 < 0 && num2 < 0 && result > num1 {
+		return
+	}
 
-
-	fmt.Println("last", result)
-
+	os.Stdout.WriteString(itoa(result) + "\n")
 }
