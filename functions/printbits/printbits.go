@@ -21,7 +21,7 @@ func main() {
 	var bin string
 	for num > 0 {
 		if num%2 != 0 {
-			bin = "1" + bin
+			bin = "1"  + bin
 		} else {
 			bin = "0" + bin
 		}
