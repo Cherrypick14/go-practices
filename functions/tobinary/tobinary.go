@@ -2,13 +2,12 @@ package main
 
 import "fmt"
 
-
-func tobinary(n int) string{
-    res := ""
+func tobinary(n int) string {
+	res := ""
 
 	for n > 0 {
 		res = itoa4(n%2) + res
-		n = n/2
+		n = n / 2
 	}
 	return res
 }
@@ -21,11 +20,12 @@ func itoa4(nb int) string {
 	}
 
 	for nb > 0 {
-		res = string(nb%10 + '0') + res
-		nb = nb/10
+		res = string(nb%10+'0') + res
+		nb = nb / 10
 	}
 	return res
 }
-func main(){
-  fmt.Println(tobinary(7))
+
+func main() {
+	fmt.Println(tobinary(7))
 }
