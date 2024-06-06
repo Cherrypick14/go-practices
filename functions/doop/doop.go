@@ -45,7 +45,7 @@ func atoi(s string) int {
 	return int(res) * sign
 }
 
-func main() {
+func mainj() {
 	// var result int
 	result := 0
 	// handle no of args

@@ -63,7 +63,7 @@ func Itoa(nb int) string {
 	return sign + result
 }
 
-func main() {
+func mainp() {
 	args := os.Args
 
 	if len(args) != 4 {
