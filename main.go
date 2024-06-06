@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	// "time"
 
-	"practices/functions"
+	// "practices/functions"
 )
 
 func main() {
@@ -22,8 +22,8 @@ func main() {
 	// fmt.Println(functions.FindNextPrime(5))
 	// fmt.Println(functions.FindNextPrime(4))
 
-	fmt.Println(functions.FindPrevPrime(5))
-	fmt.Println(functions.FindPrevPrime(4))
+	// fmt.Println(functions.FindPrevPrime(5))
+	// fmt.Println(functions.FindPrevPrime(4))
 
 	// functions.FoldInt(functions.Add,table,acc)
 
