@@ -15,7 +15,7 @@ func CamelToSnakeCase(s string) string {
 
 	for i, char := range s {
 		if isUpper(char) {
-			if i > 0 {
+			if i != 0 {
 				runes = append(runes, '_')
 			}
 		}
