@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func main() {
+func mainp() {
 	if len(os.Args) != 2 {
 		return
 	}
